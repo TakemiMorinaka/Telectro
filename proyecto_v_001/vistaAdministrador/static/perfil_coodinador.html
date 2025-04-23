@@ -99,177 +99,130 @@
 			<main class="content">
 				<div class="container-fluid p-0">
 
-			<div class="row">
-				<!-- Tabla izquierda (Distritos) -->
-				<div class="col-12 col-lg-6 d-flex">
-					<div class="card flex-fill">
-						<div class="card-header">
-							<h5 class="card-title mb-0">Distrito</h5>
-						</div>
-						<table class="table table-hover my-0">
-							<thead>
-								<tr>
-									<th>Nombre</th>
-									<th>Acción</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Coordinador A</td>
-									<td><button class="btn btn-primary btn-sm" onclick="mostrarTabla('sanMartin')">Ir al coordinador</button></td>
-								</tr>
-								<tr>
-									<td>Cordinador B</td>
-									<td><button class="btn btn-primary btn-sm" onclick="mostrarTabla('laLibertad')">Ir al coordinador</button></td>
-								</tr>
-							
-							</tbody>
-						</table>
+					<div class="mb-3">
+						<h1 class="h3 d-inline align-middle">Encuestador Seleccionado</h1>
+						
 					</div>
-				</div>
-			
-				<!-- Tabla derecha (Dinámica) -->
-				<div class="col-12 col-lg-6 d-flex">
-					<div class="card flex-fill">
-						<div class="card-header d-flex justify-content-between align-items-center">
-							<h5 class="card-title mb-0" id="tituloDistrito">Seleccione un distrito</h5>
+					<div class="row">
+						<div class="col-md-4 col-xl-3">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h5 class="card-title mb-0">Perfil del encuestador</h5>
+								</div>
+								<div class="card-body text-center">
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPN-FCLz6xVvu3v85FDhlprG5CDwaOVjVdA&s" alt="Christina Mason" class="img-fluid rounded-circle mb-2" width="128" height="128" />
+									<h5 class="card-title mb-0">Señor Barriga</h5>
+									<div class="text-muted mb-2">Encuestador hace 2 dias</div>
+
+									
+								</div>
+								
+								
+								<hr class="my-0" />
+								<div class="card-body">
+									<h5 class="h6 card-title">Sobre el</h5>
+									<ul class="list-unstyled mb-0">
+										<li class="mb-1"><span data-feather="home" class="feather-sm me-1"></span> Zona <a href="#">Zona A</a></li>
+
+										<li class="mb-1"><span data-feather="briefcase" class="feather-sm me-1"></span> Distrito <a href="#">San Martin de Porres</a></li>
+										<li class="mb-1"><span data-feather="map-pin" class="feather-sm me-1"></span> Encuestas completadas <a >1234</a></li>
+									</ul>
+								</div>
+								<hr class="my-0" />
+								<div class="card-body">
+									<h5 class="h6 card-title">Contactos</h5>
+									<ul class="list-unstyled mb-0">
+										<li class="mb-1"><a href="#">Linkedin</a></li>
+										<li class="mb-1"><a href="#">Correo electronico</a></li>
+									
+										
+									</ul>
+								</div>
+								<hr class="my-0" />
+								<td style="display: flex; justify-content: center; align-items: center;">
+									<button class="btn btn-danger btn-sm">Banear encuestador</button>
+								</td>
+							</div>
 						</div>
-						<div id="tablaDinamica">
-							<div class="card-body text-center py-5">
-								<i class="fas fa-map-marker-alt fa-3x text-muted mb-3"></i>
-								<p class="text-muted">Seleccione un distrito para ver detalles</p>
+
+						<div class="col-md-8 col-xl-9">
+							<div class="card">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Actividades recientes</h5>
+								</div>
+								<div class="card-body h-100">
+
+									<div class="d-flex align-items-start">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPN-FCLz6xVvu3v85FDhlprG5CDwaOVjVdA&s" width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
+										<div class="flex-grow-1">
+											<small class="float-end text-navy">hace 4 minutos</small>
+											<strong>Señor Barriga</strong> Guardo el borrador de una encuesta <br />
+											<small class="text-muted">Hoy a las 3:23 pm</small><br />
+
+										</div>
+									</div>
+
+									<hr />
+
+									<div class="d-flex align-items-start">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPN-FCLz6xVvu3v85FDhlprG5CDwaOVjVdA&s" width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
+										<div class="flex-grow-1">
+											<small class="float-end text-navy">hace 34 minutos</small>
+											<strong>Señor Barriga</strong> A completado una encuesta <br />
+											<small class="text-muted">Hoy a las 2:53 pm</small><br />
+
+										</div>
+									</div>
+
+									<hr />
+									
+
+									
+									<div class="d-flex align-items-start">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPN-FCLz6xVvu3v85FDhlprG5CDwaOVjVdA&s" width="36" height="36" class="rounded-circle me-2" alt="William Harris">
+										<div class="flex-grow-1">
+											<small class="float-end text-navy">Hace 15 horas</small>
+											<strong>Antonio Mendez</strong> ha actualizado su nombre y foto de perfil a<strong> Señor Barriga </strong> con su nueva foto<br />
+											<small class="text-muted">Ayer a las 11:34 pm</small>
+
+											<div class="row g-0 mt-1">
+												<div class="col-6 col-md-4 col-lg-4 col-xl-3">
+													<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPN-FCLz6xVvu3v85FDhlprG5CDwaOVjVdA&s" class="img-fluid pe-2" alt="Unsplash">
+												</div>
+												
+											</div>
+
+											
+										</div>
+									</div>
+
+									<hr />
+									
+
+									<div class="d-flex align-items-start">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYPN-FCLz6xVvu3v85FDhlprG5CDwaOVjVdA&s" width="36" height="36" class="rounded-circle me-2" alt="Vanessa Tucker">
+										<div class="flex-grow-1">
+											<small class="float-end text-navy">hace 1 dia</small>
+											<strong>Señor Barriga</strong> A completado una encuesta <br />
+											<small class="text-muted">Ayer a las 1:23 pm</small><br />
+
+										</div>
+									</div>
+
+									
+
+									<hr />
+									<div class="d-grid">
+										<a href="#" class="btn btn-primary">Load more</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
-			</div>
-			
-			<!-- Plantillas para las tablas dinámicas -->
-			<div id="sanMartin-template" style="display:none;">
-				<table class="table table-hover my-0">
-					<thead>
-						<tr>
-							<th>Codigo</th>
-							<th>Nombre</th>
-							<th>Estado</th>
-							<td><button class="btn btn-danger btn-sm">Banear</button></td>
-							<td><button class="btn btn-danger btn-sm">Banear Coordinador</button></td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>52455</td>
-							<td>Jaun</td>
-							<td>13/43</td>
-							<td><input type="checkbox" class="form-check-input"></td>
-							<td>
-								<a class="btn btn-primary btn-sm" href="../../vistaAdministrador/static/perfil_coodinador.html">
-								  Ir a su perfil
-								</a>
-							  </td>
-						
-						</tr>
-						<tr>
-							<td>545234</td>
-							<td>Matias</td>
-							<td>50/50</td>
-							
-							<td><input type="checkbox" class="form-check-input"></td>
-							
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			
-			<div id="laLibertad-template" style="display:none;">
-				<table class="table table-hover my-0">
-					<thead>
-						<tr>
-							<th>Codigo</th>
-							<th>Nombre</th>
-							<th>Estado</th>
-							<td><button class="btn btn-danger btn-sm">Banear</button></td>
-							<td><button class="btn btn-danger btn-sm">Banear coordinador</button></td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>52434</td>
-							<td>Hernandez</td>
-							<td>24/43</td>
-							<td><input type="checkbox" class="form-check-input"></td>
-							
-						</tr>
-						<tr>
-							<td>75345</td>
-							<td>Gabriel</td>
-							<td>10/50</td>
-							
-							<td><input type="checkbox" class="form-check-input"></td>
-							
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			
-			<div id="comas-template" style="display:none;">
-				<table class="table table-hover my-0">
-					<thead>
-						<tr>
-							<th>Codigo</th>
-							<th>Nombre</th>
-							<th>Estado</th>
-							<td><button class="btn btn-danger btn-sm">Banear</button></td>
-							<td><button class="btn btn-danger btn-sm">Asignar</button></td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>8657654</td>
-							<td>Lupe</td>
-							<td>40/40</td>
-							<td><input type="checkbox" class="form-check-input"></td>
-							<td><input type="checkbox" class="form-check-input"></td>
-						</tr>
-						<tr>
-							<td>51245234</td>
-							<td>Nestoy</td>
-							<td>50/50</td>
-							
-							<td><input type="checkbox" class="form-check-input"></td>
-							<td><input type="checkbox" class="form-check-input"></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			
-			<div id="independencia-template" style="display:none;">
-				<table class="table table-hover my-0">
-					<thead>
-						<tr>
-							<th>Codigo</th>
-							<th>Nombre</th>
-							<th>Estado</th>
-							<td><button class="btn btn-danger btn-sm">Banear</button></td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>12332</td>
-							<td>Jaun</td>
-							<td>13/43</td>
-							<td><input type="checkbox" class="form-check-input"></td>
-						</tr>
-						<tr>
-							<td>545234</td>
-							<td>Matias</td>
-							<td>50/50</td>
-							
-							<td><input type="checkbox" class="form-check-input"></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+			</main>
 			
 	</div>
 
